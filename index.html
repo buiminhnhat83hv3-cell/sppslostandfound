@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPPS Lost & Found</title>
     <style>
+        @media (max-width: 768px) {
+          .container {
+            flex-direction: column; /* Stack vertically */
+            align-items: center;
+        }
+    
+        #foundForm, .found-items {
+            width: 90%; /* Make each section take up most of the screen width */
+            padding: 1rem; /* Reduce padding */
+        }
+    
+        .found-items .item {
+            flex-direction: column; /* Stack content inside each item vertically */
+            align-items: flex-start;
+        }
+    
+        .found-items .item img {
+            width: 100%; /* Scale image to fit container width */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 0; /* Remove left margin */
+            margin-top: 1rem; /* Add spacing above the image */
+        }
+    
+        .filter-section {
+            flex-direction: column; /* Stack filters vertically */
+            gap: 0.5rem; /* Reduce space between filters */
+        }
+    
+        button {
+            width: 100%; /* Make buttons full width for easier clicking */
+        }
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
@@ -492,3 +525,4 @@
     </script>
 </body>
 </html>
+
